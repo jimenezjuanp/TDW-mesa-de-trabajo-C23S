@@ -1,0 +1,11 @@
+/* Archivo Principal */
+
+// Importamos la base
+@use '../base/variables' as *;
+@use '../base/normalizar';
+
+// Importamos los componentes
+@use '../components/header';
+@use '../components/hero';
+@use '../components/cards';
+@use '../components/footer';

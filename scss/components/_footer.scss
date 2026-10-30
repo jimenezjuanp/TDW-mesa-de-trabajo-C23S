@@ -1,0 +1,57 @@
+/* Footer */
+@use '../base/variables' as *;
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 90%;
+    max-width: $ancho-maximo;
+    margin: 0 auto;
+    padding: 20px 0 60px 0;
+
+    .copyright p {
+        font-family: $fuente-body;
+        font-size: 14px;
+        color: $color-texto-oscuro;
+        font-weight: bold;
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 15px;
+
+        .circulo {
+            width: 45px;
+            height: 45px;
+            border: 1px solid #cccccc;
+            border-radius: 50%;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+            
+            /* Sombra de medialuna cyan */
+            box-shadow: -4px 0 0 0 $bg-primary; 
+
+            img {
+                width: 20px; 
+                height: auto;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
